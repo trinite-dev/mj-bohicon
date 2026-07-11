@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mandature",
+  "info": {
+    "singularName": "mandat",
+    "pluralName": "mandature",
+    "displayName": "Mandature",
+    "description": "Organigramme"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nom_prenom": { "type": "string", "required": true },
+    "role": { "type": "string" },
+    "commission": { "type": "enumeration", "enum": ["Genre", "Environnement", "Éducation", "Culture", "Sport", "Santé"] },
+    "photo": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "biographie": { "type": "text" },
+    "email_pro": { "type": "email" },
+    "ordre_affichage": { "type": "integer" }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "opportunites",
+  "info": {
+    "singularName": "opportunite",
+    "pluralName": "opportunites",
+    "displayName": "Opportunités",
+    "description": "Bourses & Formations"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": { "type": "string" },
+    "description_courte": { "type": "text" },
+    "contenu_detaille": { "type": "richtext" },
+    "date_limite": { "type": "date" },
+    "image": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "lien_externe": { "type": "string" },
+    "statut": { "type": "enumeration", "enum": ["Ouvert", "Fermé"] }
+  }
+}

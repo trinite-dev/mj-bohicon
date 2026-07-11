@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adhesions",
+  "info": {
+    "singularName": "adhesion",
+    "pluralName": "adhesions",
+    "displayName": "Adhesions",
+    "description": "Soumissions du formulaire React"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nom": { "type": "string", "required": true },
+    "prenom": { "type": "string", "required": true },
+    "genre": { "type": "enumeration", "enum": ["Masculin", "Féminin", "Autre"] },
+    "date_naissance": { "type": "date" },
+    "quartier": { "type": "string" },
+    "telephone": { "type": "string" },
+    "motivations": { "type": "text" },
+    "statut_traitement": { "type": "enumeration", "enum": ["En attente", "Validé", "Rejeté"], "default": "En attente" }
+  }
+}

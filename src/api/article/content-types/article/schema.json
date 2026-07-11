@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Articles",
+    "description": "Actualités"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "slug": { "type": "uid", "targetField": "title" },
+    "content": { "type": "richtext" },
+    "categorie": { "type": "enumeration", "enum": ["Actualité", "Projet", "Communiqué"] },
+    "image_couverture": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "date_publication": { "type": "date" }
+  }
+}
